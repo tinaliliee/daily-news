@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>每日新闻简报 - 2026-05-16</title>
+<title>每日新闻简报 - 2026-05-17</title>
 <script src="https://cdn.jsdelivr.net/npm/echarts@5.6.0/dist/echarts.min.js"></script>
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -75,13 +75,13 @@
 
 <div class="header">
   <h1>每日新闻简报</h1>
-  <div class="date">2026年5月16日 星期六 | 来源：官方一手信息 + 权威分析</div>
+  <div class="date">2026年5月17日 星期日 | 来源：官方一手信息 + 权威分析</div>
   <div class="badge-row">
-    <span class="badge red">原油 ↑ 4.2% $105</span>
-    <span class="badge orange">周涨10.48%</span>
-    <span class="badge blue">人民币破6.80</span>
-    <span class="badge purple">金属全线回调</span>
-    <span class="badge green">DeepSeek V4发布</span>
+    <span class="badge red">原油 $105 周涨10%</span>
+    <span class="badge orange">中美降税突破</span>
+    <span class="badge blue">人民币6.7-6.8</span>
+    <span class="badge purple">BDI月涨35%</span>
+    <span class="badge green">AI Agent崛起</span>
   </div>
 </div>
 
@@ -92,31 +92,31 @@
       <div class="label">⛽ WTI 原油</div>
       <div class="value">$105.42</div>
       <div class="change up">↑ +4.2% 周涨10.48%</div>
-      <div style="font-size:11px;color:#a0aec0;margin-top:2px;">NYMEX 5.15收盘</div>
+      <div style="font-size:11px;color:#a0aec0;margin-top:2px;">NYMEX 5.16 中东局势升温</div>
     </div>
     <div class="summary-card" style="border-left-color: #CD7F32;">
-      <div class="label">🥇 LME 铜</div>
-      <div class="value">$13,555</div>
-      <div class="change up">↓ 单日回调2.8% 周线仍涨</div>
-      <div style="font-size:11px;color:#a0aec0;margin-top:2px;">LME 5.15</div>
+      <div class="label">🥇 沪铜主力</div>
+      <div class="value">10.4-10.85万</div>
+      <div class="change up">矿端趋紧 TC跌至-102</div>
+      <div style="font-size:11px;color:#a0aec0;margin-top:2px;">LME库存39.6万吨 ↓</div>
     </div>
     <div class="summary-card" style="border-left-color: #38a169;">
-      <div class="label">💱 在岸人民币</div>
-      <div class="value">6.8140</div>
-      <div class="change down">↓ 39个月新高 破6.80</div>
-      <div style="font-size:11px;color:#a0aec0;margin-top:2px;">外汇交易中心 5.15</div>
+      <div class="label">💱 USD/CNY</div>
+      <div class="value">6.70区间</div>
+      <div class="change down">↓ 三年新高 升值通道</div>
+      <div style="font-size:11px;color:#a0aec0;margin-top:2px;">华泰看至6.4-6.5</div>
     </div>
     <div class="summary-card" style="border-left-color: #805ad5;">
-      <div class="label">📈 沪指</div>
-      <div class="value">-1.02%</div>
-      <div class="change up">↓ 连续8日成交破3万亿</div>
-      <div style="font-size:11px;color:#a0aec0;margin-top:2px;">上交所 5.15</div>
+      <div class="label">📈 BDI指数</div>
+      <div class="value">3,151</div>
+      <div class="change up">周涨5.8% 月涨35%+</div>
+      <div style="font-size:11px;color:#a0aec0;margin-top:2px;">Capesize 5,173点</div>
     </div>
     <div class="summary-card" style="border-left-color: #3498db;">
-      <div class="label">🤖 DeepSeek V4</div>
-      <div class="value">开源Agent第一</div>
-      <div class="change up">↑ 百万Token上下文</div>
-      <div style="font-size:11px;color:#a0aec0;margin-top:2px;">5月发布</div>
+      <div class="label">🤖 AI资本开支</div>
+      <div class="value">腾讯370亿/季</div>
+      <div class="change up">↑ 阿里3800亿+计划</div>
+      <div style="font-size:11px;color:#a0aec0;margin-top:2px;">Agent成为新风口</div>
     </div>
   </div>
 
@@ -125,27 +125,27 @@
     <h2><span class="icon">📊</span> 市场数据图表</h2>
     <div class="chart-grid">
       <div class="chart-box">
-        <h3>🛢 原油走势 周涨超10% (美元/桶)</h3>
+        <h3>🛢 原油走势 本周涨超10% (美元/桶)</h3>
         <div class="chart-container" id="chartOil"></div>
       </div>
       <div class="chart-box">
-        <h3>🥇 LME基本金属 全线回调 (%)</h3>
-        <div class="chart-container" id="chartMetals"></div>
+        <h3>🚢 BDI指数 月涨35% 创年内新高</h3>
+        <div class="chart-container" id="chartBDI"></div>
       </div>
       <div class="chart-box">
-        <h3>💱 人民币汇率 创39个月新高</h3>
+        <h3>💱 人民币汇率 三年升值通道</h3>
         <div class="chart-container" id="chartRMB"></div>
       </div>
       <div class="chart-box">
-        <h3>📉 A股主要指标跌幅 (5.15)</h3>
-        <div class="chart-container" id="chartAStock"></div>
+        <h3>🏭 全球云厂商资本开支 (十亿美元)</h3>
+        <div class="chart-container" id="chartCapex"></div>
       </div>
     </div>
   </div>
 
   <!-- News -->
   <div class="section">
-    <h2><span class="icon">📰</span> 分类新闻 <span class="source-count">共23条 · 均附原文链接</span></h2>
+    <h2><span class="icon">📰</span> 分类新闻 <span class="source-count">共24条 · 均附原文链接</span></h2>
     <div style="display:flex;gap:12px;flex-wrap:wrap;margin-bottom:12px;font-size:11px;color:#718096;">
       <span><span class="auth-badge gov">🏛 政府/官方</span></span>
       <span><span class="auth-badge exchange">📊 交易所</span></span>
@@ -154,74 +154,106 @@
     </div>
     <div class="tabs" id="newsTabs">
       <button class="tab-btn active" data-tab="tab1">🌍 国际<span>(5)</span></button>
-      <button class="tab-btn" data-tab="tab2">🇨🇳 政策<span>(4)</span></button>
+      <button class="tab-btn" data-tab="tab2">🇨🇳 政策<span>(5)</span></button>
       <button class="tab-btn" data-tab="tab3">💰 成本<span>(5)</span></button>
       <button class="tab-btn" data-tab="tab4">📈 投资<span>(5)</span></button>
       <button class="tab-btn" data-tab="tab5">🤖 AI<span>(4)</span></button>
     </div>
 
-    <!-- Tab 1 -->
+    <!-- Tab 1: 国际 -->
     <div class="tab-content active" id="tab1">
       <div class="news-item">
-        <div class="title"><span class="tag impact">🔴 高影响</span> 特朗普称伊朗方案"不可接受"，威胁摧毁伊朗基础设施</div>
-        <div class="summary">特朗普在空军一号接受采访：①停火系"应其他国家要求" ②伊朗方案"不可接受" ③威胁摧毁伊朗桥梁和电力设施"两天内瘫痪整个系统" ④若伊朗有核武"不会读剩下的内容"。</div>
-        <div class="analysis">💡 极度强硬表态！油价应声突破$105。如果美以真的恢复军事行动，油价可能冲向$120。</div>
+        <div class="title"><span class="tag impact">🔴 高影响</span> 特朗普：伊朗方案"不可接受"，威胁摧毁伊朗基础设施</div>
+        <div class="summary">特朗普在空军一号表示停火系"应其他国家要求"，伊朗方案"不可接受"，威胁摧毁伊朗桥梁和电力设施"两天内瘫痪"。同时美消息称最早下周恢复军事行动，五角大楼正做准备，包括更猛烈轰炸或特种部队地面进入。</div>
+        <div class="analysis">💡 ⚠️ 战争风险急剧上升！油价应声突破$105。若美以下周恢复行动，霍尔木兹海峡封锁加剧，原油可能冲向$120，全球供应链面临严重冲击。</div>
         <div class="source-bar">
           <span class="auth-badge media">📰 权威媒体</span>
-          <span class="source-label">新华社 / 央视 / 羊城晚报 / 香港中通社</span>
-          <a class="source-link" href="https://news.ycwb.com/ikimvkntjm/content_54121539.htm" target="_blank">羊城晚报 <span class="arrow">↗</span></a>
+          <span class="source-label">央视 / 羊城晚报 / 香港中通社</span>
           <a class="source-link" href="https://tv.cctv.com/2026/05/16/VIDEVEQOgI64NRsmqPVRpfOp260516.shtml" target="_blank">央视今日环球 <span class="arrow">↗</span></a>
-          <a class="source-link" href="http://hkcna.hk/docDetail.jsp?id=101321200&channel=2813" target="_blank">中通社：美或以恢复行动 <span class="arrow">↗</span></a>
+          <a class="source-link" href="http://hkcna.hk/docDetail.jsp?id=101321200&channel=2813" target="_blank">中通社 <span class="arrow">↗</span></a>
         </div>
       </div>
       <div class="news-item">
-        <div class="title"><span class="tag impact">🔴 高影响</span> 美以最早下周恢复对伊朗军事行动，五角大楼做准备</div>
-        <div class="summary">美国消息人士透露五角大楼正为恢复军事行动做准备，选项包括更猛烈轰炸或特种部队地面进入获取核材料。数百名特种部队已于3月抵达中东。自4月停火以来美军已为战舰重新配备弹药。</div>
-        <div class="analysis">💡 ⚠️ 战争风险急剧上升！若恢复军事行动，霍尔木兹海峡将进一步封锁，全球供应链面临严重冲击。</div>
+        <div class="title"><span class="tag impact">🔴 高影响</span> 中美经贸磋商达成五项初步成果！原则同意对等降税</div>
+        <div class="summary">商务部5月16日正式公布：双方原则同意对同等规模各自关注产品降税；成立贸易理事会和投资理事会；推动农产品双向准入；中方向美方采购飞机，美方保障发动机等对华供应；继续落实前期关税安排成果。</div>
+        <div class="analysis">💡 这是数年来中美贸易最重要突破！若降税落地，进口成本将显著降低。对在美资企业从事外贸的你是重大利好。关注贸易理事会后续具体产品清单。</div>
         <div class="source-bar">
-          <span class="auth-badge media">📰 权威媒体</span>
-          <span class="source-label">香港中通社</span>
-          <a class="source-link" href="http://hkcna.hk/docDetail.jsp?id=101321200&channel=2813" target="_blank">中通社详细报道 <span class="arrow">↗</span></a>
+          <span class="auth-badge gov">🏛 政府/官方</span>
+          <span class="source-label">商务部 / 人民日报 / 新华社</span>
+          <a class="source-link" href="https://cpc.people.com.cn/BIG5/n1/2026/0517/c64387-40721165.html" target="_blank">人民日报 <span class="arrow">↗</span></a>
+          <a class="source-link" href="https://news.qq.com/rain/a/20260516A08Q4500" target="_blank">腾讯新闻 <span class="arrow">↗</span></a>
         </div>
       </div>
       <div class="news-item">
-        <div class="title"><span class="tag impact">🔴 关注</span> 法国"戴高乐"号航母抵达阿拉伯海</div>
-        <div class="summary">法国海军航母抵达阿拉伯海部署，为霍尔木兹海峡多国护航行动做准备。法方称立场是"防御性"且"符合国际法"。</div>
-        <div class="analysis">💡 多国军事力量集结中东，局势日趋复杂。航运安全短期难以保障。</div>
+        <div class="title"><span class="tag info">关注</span> 联合国秘书长：霍尔木兹海峡危机刻不容缓</div>
+        <div class="summary">古特雷斯警告海峡危机加剧推升油价，呼吁和平解决。联合国粮农组织警告航运受阻导致全球化肥短缺，冲击粮食供应，非洲及亚洲国家受影响最大。俄外长拉夫罗夫与卡塔尔斡旋，强调不动武。</div>
+        <div class="analysis">💡 多边斡旋正在进行，但美方强硬表态让和平前景暗淡。粮食安全问题间接影响全球消费需求。</div>
+        <div class="source-bar">
+          <span class="auth-badge gov">🏛 国际组织</span>
+          <span class="source-label">联合国 / 粮农组织 / 俄新社</span>
+          <a class="source-link" href="https://www.un.org/zh/242976" target="_blank">联合国官网 <span class="arrow">↗</span></a>
+          <a class="source-link" href="https://sputniknews.cn/20260506/1071111991.html" target="_blank">俄新社 <span class="arrow">↗</span></a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="title"><span class="tag info">关注</span> 法国"戴高乐"号航母抵达阿拉伯海</div>
+        <div class="summary">法国航母抵达阿拉伯海部署，为霍尔木兹海峡多国护航行动做准备。俄外交部警告波斯湾地区存在重新爆发大规模武装冲突风险。</div>
+        <div class="analysis">💡 多国军事力量集结中东，即使停火维持，航运安全保险费率短期难以下降，海运成本持续偏高。</div>
         <div class="source-bar">
           <span class="auth-badge media">📰 权威媒体</span>
-          <span class="source-label">羊城晚报</span>
+          <span class="source-label">羊城晚报 / 环球网</span>
           <a class="source-link" href="https://news.ycwb.com/ikimvkntjm/content_54121539.htm" target="_blank">阅读原文 <span class="arrow">↗</span></a>
         </div>
       </div>
       <div class="news-item">
-        <div class="title"><span class="tag info">关注</span> 美伊谈判破裂，中东战火或将再度燃起</div>
-        <div class="summary">多家媒体综合报道，美伊和谈已破裂。特朗普称停火是"帮巴基斯坦一个忙"，而美国已开始为恢复军事行动做准备。伊朗外长表示伊朗不寻求发展核武器。</div>
-        <div class="analysis">💡 谈判破裂意味着未来一段时间地缘风险将持续高位。</div>
+        <div class="title"><span class="tag info">数据</span> 全球航司削减超7.5万航班，航空燃料成本飙升</div>
+        <div class="summary">因航空燃料价格飙升，全球航司在夏季削减超7.5万个航班，美欧航司均受冲击。美国国际贸易法院裁定美国政府征收10%全球关税违法。</div>
+        <div class="analysis">💡 航空货运价格可能随之上涨，对时效性要求高的订单运输成本需关注。</div>
         <div class="source-bar">
           <span class="auth-badge media">📰 权威媒体</span>
-          <span class="source-label">腾讯新闻 / 综合媒体</span>
-          <a class="source-link" href="https://news.qq.com/rain/a/20260516V078KC00" target="_blank">腾讯新闻 <span class="arrow">↗</span></a>
+          <span class="source-label">综合媒体</span>
+          <a class="source-link" href="http://www.china.com.cn/opinion/2026-05/13/content_118492044.html" target="_blank">中国网评 <span class="arrow">↗</span></a>
         </div>
       </div>
     </div>
 
-    <!-- Tab 2 -->
+    <!-- Tab 2: 政策 -->
     <div class="tab-content" id="tab2">
       <div class="news-item">
-        <div class="title"><span class="tag info">数据</span> 4月金融数据：社融新增6210亿同比少增，人民币贷款净减少</div>
-        <div class="summary">4月社融新增6210亿元（同比少增5390亿），人民币贷款净减少100亿元（2025年7月来首次转负）。M2增速8.6%。居民消费贷款首次转负，"存款搬家"趋势持续。</div>
-        <div class="analysis">💡 实体融资需求仍在筑底，但资金正从储蓄向权益市场迁移，对A股有一定支撑。</div>
+        <div class="title"><span class="tag opportunity">🟢 重磅利好</span> 中美同意对等降税！成立贸易与投资理事会</div>
+        <div class="summary">5月14日元首会晤后，商务部16日公布五大成果：①原则同意等规模对等降税 ②成立贸易理事会和投资理事会推动后续磋商 ③解决农产品准入壁垒 ④飞机采购与供应链保障 ⑤继续落实前期关税安排。俄总统普京也将于近期对华国事访问。</div>
+        <div class="analysis">💡 这是数年来最实质性的中美贸易突破！若降税落实，你们进口的促销品原材料成本将显著下降。建议密切关注贸易理事会后续产品清单和时间表。</div>
         <div class="source-bar">
           <span class="auth-badge gov">🏛 政府/官方</span>
-          <span class="source-label">央行 / 金融数据</span>
-          <a class="source-link" href="https://caifuhao.eastmoney.com/news/20260515165302865712960" target="_blank">银华投顾解读 <span class="arrow">↗</span></a>
+          <span class="source-label">商务部 / 新华社 / 人民网</span>
+          <a class="source-link" href="https://www.workercn.cn/papers/grrb/2026/05/17/1/news-2.html" target="_blank">工人日报 <span class="arrow">↗</span></a>
+          <a class="source-link" href="http://mrdx.cn/content/20260517/Articel02003NR.htm" target="_blank">新华每日电讯 <span class="arrow">↗</span></a>
         </div>
       </div>
       <div class="news-item">
-        <div class="title"><span class="tag opportunity">🟢 利好</span> 前4月外贸同比+14.9%，对非贸易首破8000亿</div>
-        <div class="summary">海关总署数据：前4月进出口16.23万亿(+14.9%)。对非洲贸易历史同期首次突破8000亿(+19.4%)。民营企业占比57.4%。</div>
-        <div class="analysis">💡 外贸持续高增长利好你的行业，对非零关税效果显现。</div>
+        <div class="title"><span class="tag opportunity">🟢 利好</span> 中国对所有非洲建交国实施零关税（5月起两年）</div>
+        <div class="summary">国务院关税税则委员会公告，5月1日起至2028年4月底，对20个建交的非最不发达国家非洲国家以特惠税率形式实施零关税。中国成为全球首个对所有非洲建交国单方面全面零关税的主要经济体。</div>
+        <div class="analysis">💡 中非贸易将大幅增长，前4月已突破8000亿(+19.4%)。更多非洲供应商进入市场，可能带来新的采购机会和成本优势。</div>
+        <div class="source-bar">
+          <span class="auth-badge gov">🏛 政府/官方</span>
+          <span class="source-label">国务院关税税则委员会 / 人民网</span>
+          <a class="source-link" href="http://finance.people.com.cn/n1/2026/0502/c1004-40712792.html" target="_blank">人民网 <span class="arrow">↗</span></a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="title"><span class="tag info">关注</span> 新修订《海商法》5月1日起施行</div>
+        <div class="summary">1993年以来首次系统性修订。卸货港无人提货责任由"收货人担责"转向"托运人首责"。海关总署新增"禁限管制识别码"为必填项。六部门发文推进跨境电商和"丝路电商"发展。</div>
+        <div class="analysis">💡 海商法修订影响进出口合同条款，托运人责任加重需注意。跨境电商政策利好新渠道。</div>
+        <div class="source-bar">
+          <span class="auth-badge gov">🏛 政府/官方</span>
+          <span class="source-label">海关总署 / 商务部 / 贸促会</span>
+          <a class="source-link" href="http://www.ccpitjinan.org/col/col9856/art/2026/art_8e1a9b897df4442db31e930e6308680a.html" target="_blank">贸促会新政解读 <span class="arrow">↗</span></a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="title"><span class="tag info">关注</span> 前4月外贸同比+14.9%，贸易顺差848亿美元</div>
+        <div class="summary">海关总署数据：前4月进出口16.23万亿(+14.9%)。4月出口同比+14.1%，远超预期的8.4%。对非洲贸易首破8000亿(+19.4%)。民营企业占比57.4%。</div>
+        <div class="analysis">💡 外贸数据持续强劲，出口高增长有望缓解国内产能压力。贸易顺差扩大也支撑人民币走强。</div>
         <div class="source-bar">
           <span class="auth-badge gov">🏛 政府/官方</span>
           <span class="source-label">海关总署</span>
@@ -229,160 +261,168 @@
         </div>
       </div>
       <div class="news-item">
-        <div class="title"><span class="tag info">关注</span> 2026年跨境贸易便利化29项措施推进中</div>
-        <div class="summary">海关总署牵头24部门在45城市开展便利化专项行动，涵盖通关模式创新、数智口岸建设等。</div>
-        <div class="analysis">💡 通关便利化对你们的进出口业务是积极信号。</div>
+        <div class="title"><span class="tag info">关注</span> 普京将于近期对华国事访问</div>
+        <div class="summary">商务部发布中美经贸磋商成果的同时，宣布俄罗斯总统普京将对华进行国事访问。中俄贸易和能源合作有望进一步深化。</div>
+        <div class="analysis">💡 中俄能源合作加强有望部分对冲中东供应风险，关注长期能源供应格局变化。</div>
         <div class="source-bar">
           <span class="auth-badge gov">🏛 政府/官方</span>
-          <span class="source-label">海关总署</span>
-          <a class="source-link" href="http://www.customs.gov.cn/customs/2026-04/28/article_2026042810342024906.html" target="_blank">政策解读 <span class="arrow">↗</span></a>
-        </div>
-      </div>
-      <div class="news-item">
-        <div class="title"><span class="tag info">关注</span> 黎以停火延长45天同时以军空袭黎南部</div>
-        <div class="summary">黎巴嫩美国以色列三方会谈后同意停火延长45天，同日以军空袭黎南部造成至少12人死亡。</div>
-        <div class="analysis">💡 中东多点冲突交织，局势短期内难以平静。</div>
-        <div class="source-bar">
-          <span class="auth-badge media">📰 权威媒体</span>
-          <span class="source-label">综合媒体</span>
-          <a class="source-link" href="https://news.ycwb.com/ikimvkntjm/content_54121539.htm" target="_blank">阅读原文 <span class="arrow">↗</span></a>
+          <span class="source-label">商务部 / 新华社</span>
+          <a class="source-link" href="https://cd.nbd.com.cn/articles/2026-05-16/4395679.html" target="_blank">每经 <span class="arrow">↗</span></a>
         </div>
       </div>
     </div>
 
-    <!-- Tab 3 -->
+    <!-- Tab 3: 成本 -->
     <div class="tab-content" id="tab3">
       <div class="news-item">
-        <div class="title"><span class="tag impact">🔴 核心关注</span> WTI $105.42！周涨10.48%，停火前景恶化</div>
-        <div class="summary">WTI 6月合约收涨4.2%报105.42，本周累计涨超10%。布伦特109.26(+3.35%)。特朗普强硬表态+美以或恢复军事行动是主要推手。OPEC发布全面供应警告。</div>
-        <div class="analysis">💡 ⚠️ 油价突破$105，距历史高位越来越近。塑料粒子成本上升压力将在1-2个月后传导，建议提前备货锁价。</div>
-        <div class="source-bar">
-          <span class="auth-badge exchange">📊 交易所/数据</span>
-          <span class="source-label">NYMEX / 财联社 / 蓝鲸财经</span>
-          <a class="source-link" href="https://www.cls.cn/detail/2373014" target="_blank">财联社快讯 <span class="arrow">↗</span></a>
-          <a class="source-link" href="https://www.9fzt.com/724info/f3522d360723dab5c094618c6b3efb78.html" target="_blank">原油收盘 <span class="arrow">↗</span></a>
-        </div>
-      </div>
-      <div class="news-item">
-        <div class="title"><span class="tag impact">🔴 关注</span> LME金属全线回调：铜跌2.8%锡跌4.2%</div>
-        <div class="summary">5月15日LME全线下跌：铜-2.8%($13,555)、铝-2.6%、锌-1.4%、镍-2.1%、锡-4.2%。主因美国通胀超预期+美元走强+中国买家观望。铜价距历史峰值已回调约6.8%。</div>
-        <div class="analysis">💡 短期回调不改长期供应紧张格局。如果价格回落，反而是采购锁价的好时机。</div>
+        <div class="title"><span class="tag impact">🔴 核心关注</span> WTI $105.42 周涨10.48%！中东局势持续升温</div>
+        <div class="summary">WTI 6月合约收涨4.2%报105.42，本周累计涨超10%。布伦特109.26(+3.35%)，近$110。特朗普强硬表态+美以或恢复军事行动驱动。OPEC发布全面供应警告。暗盘布伦特$104.92为重要心理支撑位。</div>
+        <div class="analysis">💡 ⚠️ 油价已突破$105，距历史高位越来越近。塑料粒子等石化原材料成本压力将在1-2个月后传导至下游。建议：①提前与供应商锁价 ②评估远期订单利润率 ③关注中东走势。</div>
         <div class="source-bar">
           <span class="auth-badge exchange">📊 交易所</span>
-          <span class="source-label">LME / 华尔街见闻</span>
-          <a class="source-link" href="https://wallstreetcn.com/livenews/3104566" target="_blank">华尔街见闻 <span class="arrow">↗</span></a>
-          <a class="source-link" href="https://www.cnfin.com/dz-lb/detail/20260516/4413430_1.html" target="_blank">中国金融信息网 <span class="arrow">↗</span></a>
+          <span class="source-label">NYMEX / 财联社 / 经济时报</span>
+          <a class="source-link" href="https://en.infomaxai.com/news/articleView.html?idxno=120893" target="_blank">Yonhap Infomax <span class="arrow">↗</span></a>
+          <a class="source-link" href="https://m.economictimes.com/markets/commodities/news/crude-oil-prices-surge-8-in-a-week-to-near-110-as-iran-war-tensions-simmer-again-where-are-prices-headed/amp_articleshow/131131604.cms" target="_blank">经济时报 <span class="arrow">↗</span></a>
         </div>
       </div>
       <div class="news-item">
-        <div class="title"><span class="tag opportunity">🟢 利好</span> 人民币升破6.80创39个月新高</div>
-        <div class="summary">5月11日在岸人民币即期汇率升破6.80，最高触及6.7900，创2023年2月以来新高。5月15日收盘6.8140。专家预计5月将在6.77-6.85区间双向波动。</div>
-        <div class="analysis">💡 人民币升值利好进口，对buying office是直接成本利好。但短期波动加大需关注。</div>
+        <div class="title"><span class="tag impact">🔴 关注</span> BDI月涨35%+！海岬型船收益创2023年12月新高</div>
+        <div class="summary">BDI 5月15日收3,151点，全周涨5.8%，月涨35%+。海岬型BCI 5,173点，日均租金$43,413；巴拿马型BPI 2,521点（周涨近13%），日均租金$22,691。铁矿石补库、铝矾土增量、霍尔木兹绕航效应共同推升运价。</div>
+        <div class="analysis">💡 ⚠️ 运费暴涨直接推高进口成本！作为做shipping的岗位，这是你的核心关注。Capesize收益达$43K/天，船东自由现金流收益率约22%。关注后续铁矿石需求变化。</div>
+        <div class="source-bar">
+          <span class="auth-badge exchange">📊 交易所/数据</span>
+          <span class="source-label">波罗的海交易所 / 证券之星</span>
+          <a class="source-link" href="http://forex.cnfol.com/jingjiyaowen/20260514/32223171.shtml" target="_blank">中金在线 <span class="arrow">↗</span></a>
+          <a class="source-link" href="http://forex.cnfol.com/jingjiyaowen/20260516/32229637.shtml" target="_blank">5.15 BDI回调 <span class="arrow">↗</span></a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="title"><span class="tag opportunity">🟢 利好</span> 人民币升破6.80进入6.7区间，创三年新高</div>
+        <div class="summary">5月11日在岸人民币升破6.80，最高6.7905；5月14日中间价6.8401。一季度GDP+5.0%，4月出口+14.1%，贸易顺差848亿美元支撑强劲升值。华泰证券看至6.4-6.5。央行强调防止超调，预计双向波动。</div>
+        <div class="analysis">💡 ✅ 人民币升值直接降低进口成本，对Buying Office是大利好！但快速升值后央行可能干预，建议利用当前汇率窗口加大进口结算。12个月看至6.4-6.5的话，现在锁汇也有空间。</div>
         <div class="source-bar">
           <span class="auth-badge gov">🏛 政府/官方</span>
-          <span class="source-label">中国外汇交易中心 / 新华社</span>
-          <a class="source-link" href="https://www.cnfin.com/yw-lb/detail/20260508/4409465_1.html" target="_blank">中国金融信息网 <span class="arrow">↗</span></a>
-          <a class="source-link" href="http://www.jjckb.cn/20260508/52acb759c47143a5832694b7d2f78131/c.html" target="_blank">经济参考报 <span class="arrow">↗</span></a>
+          <span class="source-label">中国外汇交易中心 / 华泰证券</span>
+          <a class="source-link" href="https://stock.jrj.com.cn/2026/05/11074257059525.shtml" target="_blank">金融界 <span class="arrow">↗</span></a>
+          <a class="source-link" href="https://app.dahecube.com/nweb/news/20260511/273329nc8b157fbb0d.htm" target="_blank">大河财立方 <span class="arrow">↗</span></a>
         </div>
       </div>
       <div class="news-item">
-        <div class="title"><span class="tag info">关注</span> 大宗商品综述：油价攀升，铜价回落，金银双挫</div>
-        <div class="summary">美国通胀数据超预期推高美元，压制金属和贵金属价格。但地缘风险持续支撑能源价格。资产分化明显。</div>
-        <div class="analysis">💡 当前市场逻辑：能源涨(地缘驱动) vs 金属跌(美元走强)，需分别关注不同驱动因素。</div>
+        <div class="title"><span class="tag info">关注</span> LME铜库存下降，矿端TC跌至-102美元</div>
+        <div class="summary">LME铜库存39.57万吨(周降0.53万吨)。沪铜主力104,315~108,500元/吨区间震荡。进口铜精矿TC跌至-102.84美元/干吨，矿端供应持续偏紧。洋山铜溢价72美元/吨，进口窗口关闭。</div>
+        <div class="analysis">💡 矿端持续偏紧支撑中长期铜价，但短期宏观情绪偏空。对含铜产品采购：短期观望，中长期逢低锁价。</div>
+        <div class="source-bar">
+          <span class="auth-badge report">📑 权威研报</span>
+          <span class="source-label">华泰期货 / 华源证券</span>
+          <a class="source-link" href="http://m.microbell.com/wap_detail.aspx?id=21377995e943966c6d360547bdb290ab" target="_blank">华泰期货周报 <span class="arrow">↗</span></a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="title"><span class="tag info">关注</span> 美国CPI 3.8%超预期，12月加息概率升至39%</div>
+        <div class="summary">美国4月CPI达3.8%（超预期），PPI同比飙升至6%。市场对美联储12月加息25bp概率从13.6%飙升至39.1%。沃什已获批准接替鲍威尔任美联储主席，市场担忧其鹰派立场。</div>
+        <div class="analysis">💡 加息预期升温推高美元，可能压制金属价格，但从另一方面可能部分缓解人民币升值速度。关注沃什上任后政策信号。</div>
         <div class="source-bar">
           <span class="auth-badge media">📰 权威媒体</span>
           <span class="source-label">综合财经媒体</span>
-          <a class="source-link" href="https://www.sohu.com/a/1023290906_122014422" target="_blank">大宗商品综述 <span class="arrow">↗</span></a>
+          <a class="source-link" href="https://data.eastmoney.com/report/zw_industry.jshtml?encodeUrl=XgmbWxKOL5RjfL09nBjxd5mBHk7q6p73REiNnbdhcm8=" target="_blank">东方财富 <span class="arrow">↗</span></a>
         </div>
       </div>
     </div>
 
-    <!-- Tab 4 -->
+    <!-- Tab 4: 投资 -->
     <div class="tab-content" id="tab4">
       <div class="news-item">
-        <div class="title"><span class="tag info">行情</span> A股宽幅震荡，三大指数收跌，成交连续8日破3万亿</div>
-        <div class="summary">5月15日沪指-1.02%，深成指-1.17%，创业板-0.56%。超3500只个股下跌。上午半导体设备、机器人板块活跃，下午再度下探。成交连续8日突破3万亿。</div>
-        <div class="analysis">💡 高位震荡格局，成交量维持高位说明市场热度仍在，但方向不明朗。</div>
+        <div class="title"><span class="tag info">行情</span> 上证指数站上4200点！28位基金经理最新研判</div>
+        <div class="summary">上证指数站上4200点，"9·24"行情启动一年半多指数创新高。超65%基金经理认为将高位震荡；约12%乐观派看3个月内突破4500点。54%认为AI算力行情可延续半年以上。70%关注AI算力、光模块、半导体。</div>
+        <div class="analysis">💡 4200点市场分歧加大是正常的。多数基金经理建议"不被情绪打乱，按策略执行"，不追高不盲目减仓，优化结构。</div>
         <div class="source-bar">
           <span class="auth-badge media">📰 权威媒体</span>
-          <span class="source-label">Wind / 上证报</span>
-          <a class="source-link" href="https://www.efunds.com.cn/c/800/800156.shtml" target="_blank">易方达市场展望 <span class="arrow">↗</span></a>
+          <span class="source-label">中国基金报</span>
+          <a class="source-link" href="https://www.21jingji.com/article/20260517/herald/fa35b736a534723cb353680ea04f75aa.html" target="_blank">21经济报道 <span class="arrow">↗</span></a>
         </div>
       </div>
       <div class="news-item">
-        <div class="title"><span class="tag opportunity">🟢 资金面</span> 基金"专业买手"连续6个月加仓A股</div>
-        <div class="summary">基金投顾A股仓位连续6个月提升。4月最受青睐行业：电子、机械设备、电力设备、医药生物。减配：银行、军工、家电。</div>
-        <div class="analysis">💡 专业资金持续流入科技+医药方向，可在配置时参考。</div>
+        <div class="title"><span class="tag opportunity">🟢 机会</span> 行业轮动核心组合5月收益+16.68%！科技主线强势</div>
+        <div class="summary">天风证券策略周报：行业轮动核心组合单周+5.58%，5月累计+16.68%。科技成长型基金4月收益+22%~+30%。AI算力、光模块、半导体设备是核心方向。科创AI ETF连续11天净流入。</div>
+        <div class="analysis">💡 AI科技主线是目前最强方向。适合定投方式参与AI相关ETF，避免追高。</div>
         <div class="source-bar">
           <span class="auth-badge report">📑 权威研报</span>
-          <span class="source-label">开源证券</span>
-          <a class="source-link" href="http://finance.ce.cn/jjpd/jjpdgd/202605/t20260512_2959013.shtml" target="_blank">中国经济网 <span class="arrow">↗</span></a>
+          <span class="source-label">天风证券 / 东吴证券</span>
+          <a class="source-link" href="http://stock.finance.sina.com.cn/stock/go.php/vReport_Show/kind/lastest/rptid/832330413375/index.phtml" target="_blank">天风策略 <span class="arrow">↗</span></a>
         </div>
       </div>
       <div class="news-item">
-        <div class="title"><span class="tag info">机构策略</span> 多家机构建议"哑铃型"配置：高股息防守+高景气进攻</div>
-        <div class="summary">易方达余海燕：震荡修复延续，"哑铃型"配置。东方证券：聚焦科技制造+周期涨价。银华投顾：高位震荡设定回撤阈值。普遍建议均衡配置降低波动。</div>
-        <div class="analysis">💡 当前市场位置，建议平衡配置：红利ETF防守 + AI/科技ETF进攻。</div>
+        <div class="title"><span class="tag info">信号</span> 大盘指数触发局部顶左侧信号</div>
+        <div class="summary">东吴证券5月17日研报：大盘指数于5月14日触发局部顶左侧信号，信号触发后指数可能进入高位震荡区间，波动进一步放大。通信ETF、半导体设备ETF规模增长，沪深300ETF规模减少。</div>
+        <div class="analysis">💡 技术信号提示短期波动加剧。策略上：不追高、逢回调加仓、保持均衡配置。</div>
         <div class="source-bar">
           <span class="auth-badge report">📑 权威研报</span>
-          <span class="source-label">易方达 / 东方证券 / 银华</span>
-          <a class="source-link" href="https://www.efunds.com.cn/c/800/800150.shtml" target="_blank">易方达余海燕 <span class="arrow">↗</span></a>
-          <a class="source-link" href="http://fund.10jqka.com.cn/20260515/c676706573.shtml" target="_blank">东方证券策略 <span class="arrow">↗</span></a>
+          <span class="source-label">东吴证券</span>
+          <a class="source-link" href="http://stock.finance.sina.com.cn/stock/go.php/vReport_Show/kind/macro/rptid/832291261496/index.phtml" target="_blank">东吴策略 <span class="arrow">↗</span></a>
         </div>
       </div>
       <div class="news-item">
-        <div class="title"><span class="tag info">市场温度</span> 偏股基金指数创新高后续震荡，市场温度偏高</div>
-        <div class="summary">5月初偏股基金指数创13522点历史新高后，近期进入震荡。机构认为短期波动加大，但中期上行趋势未变。</div>
-        <div class="analysis">💡 指数高位震荡阶段，适合定投而非一次性重仓。</div>
+        <div class="title"><span class="tag info">关注</span> 三星工会宣布5月21日起18天大罢工</div>
+        <div class="summary">三星工会宣布5月21日起进行为期18天的大罢工。三星是全球最大存储芯片和面板供应商，罢工可能影响全球电子元器件供应。</div>
+        <div class="analysis">💡 若持续罢工可能推高存储芯片和面板价格，含电子元件的促销品成本需关注。</div>
         <div class="source-bar">
-          <span class="auth-badge report">📑 权威研报</span>
-          <span class="source-label">多家机构</span>
-          <a class="source-link" href="https://caifuhao.eastmoney.com/news/20260515165302865712960" target="_blank">银华投顾每日观点 <span class="arrow">↗</span></a>
+          <span class="auth-badge media">📰 权威媒体</span>
+          <span class="source-label">综合媒体</span>
+          <a class="source-link" href="https://cd.nbd.com.cn/articles/2026-05-16/4395679.html" target="_blank">每经 <span class="arrow">↗</span></a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="title"><span class="tag info">风险</span> 10年美债收益率创年内新高，全球流动性承压</div>
+        <div class="summary">美国4月CPI 3.8%超预期，10年期美债收益率创年内新高。市场对12月加息预期升温。沃什接任美联储主席带来政策不确定性。</div>
+        <div class="analysis">💡 美债收益率上升压制全球风险资产估值。A股高位震荡背景下，短期需要更谨慎控制仓位。</div>
+        <div class="source-bar">
+          <span class="auth-badge media">📰 权威媒体</span>
+          <span class="source-label">综合财经媒体</span>
+          <a class="source-link" href="https://data.eastmoney.com/report/zw_industry.jshtml?encodeUrl=XgmbWxKOL5RjfL09nBjxd5mBHk7q6p73REiNnbdhcm8=" target="_blank">东方财富 <span class="arrow">↗</span></a>
         </div>
       </div>
     </div>
 
-    <!-- Tab 5 -->
+    <!-- Tab 5: AI -->
     <div class="tab-content" id="tab5">
       <div class="news-item">
-        <div class="title"><span class="tag opportunity">🟢 重磅</span> DeepSeek V4正式发布！开源Agent登顶第一</div>
-        <div class="summary">DeepSeek V4采用混合注意力架构，支持百万Token上下文窗口，推理成本远低于V3。在开源Agent领域拿下第一。定价仅为美国同类竞品四分之一。</div>
-        <div class="analysis">💡 开源+低成本策略让DeepSeek在全球南方国家极具竞争力。Agent能力是核心亮点，适合做自动化副业。</div>
+        <div class="title"><span class="tag impact">🔴 重磅</span> GPT-5.5 Instant发布！医疗法律金融幻觉率降52%</div>
+        <div class="summary">OpenAI于5月6日发布GPT-5.5 Instant并设为ChatGPT默认模型，在医疗、法律、金融领域幻觉率下降约52.5%。Anthropic年化收入突破440亿美元，估值一度触及1万亿美元超越OpenAI。大模型进入"周更"时代。</div>
+        <div class="analysis">💡 模型迭代速度惊人，GPT-5.5降低幻觉是重大突破，利好AI商业化。Anthropic估值超OpenAI标志市场竞争格局生变。</div>
         <div class="source-bar">
           <span class="auth-badge media">📰 权威媒体</span>
-          <span class="source-label">虎嗅 / 搜狐科技 / 百度开发者</span>
-          <a class="source-link" href="https://www.huxiu.com/article/4858810.html" target="_blank">虎嗅深度分析 <span class="arrow">↗</span></a>
-          <a class="source-link" href="https://www.sohu.com/a/1023534643_122746834" target="_blank">搜狐科技 <span class="arrow">↗</span></a>
+          <span class="source-label">综合媒体 / 百度开发者</span>
+          <a class="source-link" href="https://developer.baidu.com/article/detail.html?id=7157770" target="_blank">百度AI周报 <span class="arrow">↗</span></a>
         </div>
       </div>
       <div class="news-item">
-        <div class="title"><span class="tag impact">🔴 风险提示</span> DeepSeek V4精准度下降，幻觉问题较严重</div>
-        <div class="summary">DeepSeek V4偏向Agent能力优先路线，但在精准度方面有所退步、幻觉问题较严重。在企业级高精度场景（金融、医疗、法律）存在风险。中美AI技术差距约3-6个月。</div>
-        <div class="analysis">💡 虽然是开源第一，但幻觉问题限制其在商用场景的落地。中美在顶尖模型上仍有差距。</div>
+        <div class="title"><span class="tag opportunity">🟢 资本风口</span> 腾讯阿里加码AI基建！腾讯Q1资本开支370亿创单季新高</div>
+        <div class="summary">腾讯一季度AI资本开支付款370亿元（单季新高），下半年国产芯片大规模投入使用。阿里AI基建投入将远超3800亿元，平头哥自研GPU已规模化量产。全球九大云厂商资本支出约8300亿美元。科创AI ETF连续11天净流入。</div>
+        <div class="analysis">💡 巨头军备竞赛确定性极高，算力产业链（芯片、光模块、服务器）景气度持续上行。国产替代方向值得长期关注。</div>
+        <div class="source-bar">
+          <span class="auth-badge media">📰 权威媒体</span>
+          <span class="source-label">东方财富 / 第一财经</span>
+          <a class="source-link" href="https://fund.eastmoney.com/a/202605143737293239.html" target="_blank">东方财富 <span class="arrow">↗</span></a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="title"><span class="tag opportunity">🟢 新风口</span> AI Agent崛起！长程智能体成新Scaling方向</div>
+        <div class="summary">长程智能体成为大模型新Scaling方向，模型可自主拆分复杂任务、长时间连贯执行。三部门出台智能体相关政策。DeepSeek V4在开源Agent领域登顶。海外Agent赛道融资火爆，类脑计算企业获4.75亿美元种子轮。</div>
+        <div class="analysis">💡 Agent是当前AI最大风口！从工具到"数字员工"的跨越。副业方向：利用Agent做自动化运营、数据分析、客服等场景。</div>
         <div class="source-bar">
           <span class="auth-badge report">📑 权威研报</span>
-          <span class="source-label">美国外交关系委员会CFR / 虎嗅</span>
-          <a class="source-link" href="https://www.sohu.com/a/1023534643_122746834" target="_blank">搜狐科技分析 <span class="arrow">↗</span></a>
-        </div>
-      </div>
-      <div class="news-item">
-        <div class="title"><span class="tag info">趋势</span> 大模型进入"周更"时代，AI Agent成为主流</div>
-        <div class="summary">一周内全球9款前沿模型密集发布。AI从简单对话向自主执行复杂任务转型。中美AI竞争格局：中国在Hugging Face下载量已超美国，但顶尖模型仍有差距。</div>
-        <div class="analysis">💡 Agent是当前AI最大风口！三部门智能体政策+DeepSeek V4 Agent能力，方向明确。</div>
-        <div class="source-bar">
-          <span class="auth-badge media">📰 权威媒体</span>
           <span class="source-label">百度开发者 / 综合科技媒体</span>
-          <a class="source-link" href="https://developer.baidu.com/article/detail.html?id=7152295" target="_blank">百度开发者 <span class="arrow">↗</span></a>
+          <a class="source-link" href="https://developer.baidu.com/article/detail.html?id=7050351" target="_blank">百度开发者 <span class="arrow">↗</span></a>
         </div>
       </div>
       <div class="news-item">
-        <div class="title"><span class="tag info">行业</span> DeepSeek 500亿融资结构落定：大基金150亿+腾讯60亿</div>
-        <div class="summary">梁文锋个人出资200亿(84.29%控制权)，大基金150亿，腾讯60亿(2%股权)。阿里因生态捆绑条件冲突出局。资金100%用于算力基建和模型迭代。</div>
-        <div class="analysis">💡 国家队入局标志AI上升为国家核心赛道，梁文锋绝对控股确保独立性。</div>
+        <div class="title"><span class="tag info">商业化</span> 国产AI模型Token调用量全球前十，应用爆发</div>
+        <div class="summary">DeepSeek、Kimi、Qwen等国产模型稳居Token调用量全球前十。Q1国内AI原生APP月活4.4亿，豆包3.45亿、千问1.66亿、DeepSeek 1.27亿。豆包推付费订阅，OpenAI上线广告平台。AI进入"谁能先盈利"阶段。</div>
+        <div class="analysis">💡 AI应用商业化提速，用户粘性快速提升。关注A股AI应用板块和能盈利的公司。</div>
         <div class="source-bar">
           <span class="auth-badge media">📰 权威媒体</span>
-          <span class="source-label">TheBlockBeats / 新浪财经</span>
-          <a class="source-link" href="https://www.theblockbeats.info/flash/345277" target="_blank">TheBlockBeats <span class="arrow">↗</span></a>
+          <span class="source-label">腾讯新闻 / 券商中国</span>
+          <a class="source-link" href="https://news.qq.com/rain/a/20260514A070JH00" target="_blank">腾讯新闻 <span class="arrow">↗</span></a>
         </div>
       </div>
     </div>
@@ -397,37 +437,44 @@
       <tr>
         <td>WTI $105.42 周涨10%</td>
         <td class="trend-up">↑ 突破$105</td>
-        <td>塑料粒子成本1-2月后将上升</td>
-        <td>建议提前备货/锁价</td>
+        <td>塑料粒子等石化原料1-2月后涨价</td>
+        <td>提前备货/锁定远期合约</td>
         <td><span class="tag impact">🔴 高</span></td>
       </tr>
       <tr>
-        <td>美以或恢复军事行动</td>
-        <td class="trend-up">↑ 风险急剧上升</td>
-        <td>航运可能进一步受阻</td>
-        <td>建立供应链应急预案</td>
+        <td>BDI月涨35%+ Capesize $43K/天</td>
+        <td class="trend-up">↑ 运费暴涨</td>
+        <td>海运成本直线上涨，Shipping核心影响</td>
+        <td>评估现有运费条款，考虑锁运价</td>
         <td><span class="tag impact">🔴 高</span></td>
       </tr>
       <tr>
-        <td>LME铜回调2.8%</td>
-        <td class="trend-down">↓ 短期回调</td>
-        <td>铜制品成本或有短期缓解</td>
-        <td>关注是否持续回落，择机锁价</td>
-        <td><span class="tag info">🟡 中</span></td>
+        <td>美以下周或恢复军事行动</td>
+        <td class="trend-up">↑ 风险飙升</td>
+        <td>霍尔木兹封锁→航运受阻+油价冲$120</td>
+        <td>建供应链应急预案，评估替代路线</td>
+        <td><span class="tag impact">🔴 高</span></td>
       </tr>
       <tr>
-        <td>人民币升值破6.80</td>
-        <td class="trend-down">↓ 39个月新高</td>
+        <td>中美原则同意对等降税</td>
+        <td class="trend-down">✅ 重大利好</td>
+        <td>进口成本有望降低，利好POM</td>
+        <td>关注贸易理事会后续产品清单</td>
+        <td><span class="tag opportunity">🟢 高</span></td>
+      </tr>
+      <tr>
+        <td>人民币升值6.7-6.8区间</td>
+        <td class="trend-down">↓ 三年新高</td>
         <td>进口成本降低（利好）</td>
-        <td>利用汇率优势优化采购</td>
+        <td>利用汇率窗口加大进口结算</td>
         <td><span class="tag opportunity">🟢 中</span></td>
       </tr>
       <tr>
-        <td>金融数据偏弱</td>
-        <td>📋 社融少增</td>
-        <td>需求端可能偏弱</td>
-        <td>关注下游客户订单变化</td>
-        <td><span class="tag info">🟡 低</span></td>
+        <td>三星5/21起18天罢工</td>
+        <td class="trend-up">↑ 供应风险</td>
+        <td>含电子元件促销品供应可能受影响</td>
+        <td>评估电子类产品订单排期</td>
+        <td><span class="tag info">🟡 中</span></td>
       </tr>
     </table>
     </div>
@@ -438,22 +485,23 @@
     <h2><span class="icon">📝</span> 今日综合点评</h2>
     <div class="analysis-grid">
       <div class="analysis-card">
-        <h4>🏢 工作重点</h4>
+        <h4>🏢 工作重点（POM / Shipping / PD）</h4>
         <ul>
-          <li>⛽ 油价突破$105且周涨10%，创年内最大单周涨幅！成本压力正在快速堆积</li>
-          <li>⚔️ 特朗普表态极度强硬，美以最快下周恢复军事行动，供应链风险骤升</li>
-          <li>📉 铜价回调2.8%是短期喘息窗口，如果持续可考虑择机锁价</li>
-          <li>💱 人民币破6.80利好进口，建议利用汇率窗口加大进口采购</li>
+          <li>⛽ 油价$105周涨10%+BDI月涨35% → 双重成本压力正在快速堆积，必须提前应对</li>
+          <li>⚔️ 特朗普表态极度强硬，美以下周可能恢复军事行动，供应链风险骤升</li>
+          <li>🤝 中美同意对等降税！数年来最大突破，进口成本有望下降，密切跟踪产品清单</li>
+          <li>💱 人民币三年新高利好进口，POM团队可利用汇率优势优化采购结算</li>
+          <li>📦 三星5/21起罢工18天，含电子元件的促销品供应需提前排查</li>
         </ul>
       </div>
       <div class="analysis-card">
         <h4>💰 投资 & 副业</h4>
         <ul>
-          <li>市场震荡加剧，沪指跌1%成交连续8日破3万亿，高位分歧加大</li>
-          <li>"哑铃型"配置是当前共识：红利ETF防守 + AI科技ETF进攻</li>
-          <li>DeepSeek V4开源Agent第一，Agent方向是最明确的副业赛道</li>
-          <li>三部门智能体政策发布+技术突破，AI Agent创业时机逐渐成熟</li>
-          <li>金融数据偏弱但资金"存款搬家"持续，市场流动性仍充裕</li>
+          <li>📈 上证4200点高位震荡，基金经理多数建议保持策略不追高不盲目减仓</li>
+          <li>🎯 科技（AI算力/光模块/半导体）是最强主线，适合定投参与</li>
+          <li>⚠️ 局部顶信号触发+美债收益率新高，短期波动加大需控制仓位</li>
+          <li>🤖 AI Agent是当前最大风口，长程智能体成为新Scaling方向，副业机会明确</li>
+          <li>💡 哑铃型配置获共识：红利防守+AI科技进攻，均衡配置降低波动</li>
         </ul>
       </div>
     </div>
@@ -464,20 +512,20 @@
     <h2><span class="icon">⚠️</span> 风险提醒</h2>
     <div class="risk-bar">
       <div class="risk-item high">
-        <strong>🔴 战争风险</strong><br>
-        美以下周或恢复对伊军事行动！海峡封锁加剧+油价可能冲向$120
+        <strong>🔴 中东战争风险</strong><br>
+        美以下周或恢复对伊军事行动！油价可能冲向$120，海峡封锁加剧
       </div>
       <div class="risk-item high">
-        <strong>🔴 油价暴涨传导</strong><br>
-        WTI周涨10%已到$105，塑料等原材料涨价压力即将传导
+        <strong>🔴 运费暴涨</strong><br>
+        BDI月涨35%+，Capesize日均$43K，Shipping成本直线上升
       </div>
       <div class="risk-item med">
         <strong>🟠 A股高位震荡</strong><br>
-        连续8日成交破3万亿但方向不明，板块轮动加快
+        局部顶信号触发+美债收益率新高，短期波动加大
       </div>
       <div class="risk-item med">
-        <strong>🟠 AI幻觉风险</strong><br>
-        DeepSeek V4精准度下降，商用场景落地存隐患
+        <strong>🟠 三星罢工</strong><br>
+        5/21起18天，全球芯片/面板供应或受影响
       </div>
     </div>
   </div>
@@ -486,16 +534,16 @@
   <div class="section">
     <h2><span class="icon">📋</span> 信息来源索引</h2>
     <div style="font-size:12px;color:#4a5568;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:8px;">
-      <div><strong>🏛 政府/官方</strong><br>gov.cn / 央视 / 新华社 / 海关总署 / 央行</div>
-      <div><strong>📊 交易所/数据</strong><br>NYMEX / LME / 财联社 / 华尔街见闻</div>
-      <div><strong>📑 机构研报</strong><br>易方达 / 东方证券 / 银华 / 开源证券</div>
-      <div><strong>📰 权威媒体</strong><br>BBC / 虎嗅 / 香港中通社 / 羊城晚报</div>
+      <div><strong>🏛 政府/官方</strong><br>商务部 / 海关总署 / 人民日报 / 新华社 / 央视 / 联合国</div>
+      <div><strong>📊 交易所/数据</strong><br>NYMEX / LME / 波罗的海交易所 / 财联社 / 外汇交易中心</div>
+      <div><strong>📑 机构研报</strong><br>华泰期货 / 天风证券 / 东吴证券 / 华源证券 / 中国基金报</div>
+      <div><strong>📰 权威媒体</strong><br>人民网 / BBC / 香港中通社 / 经济时报 / 百度开发者</div>
     </div>
   </div>
 </div>
 
 <div class="footer">
-  📊 每日新闻简报 | 2026-05-16 | 不构成投资建议<br>
+  📊 每日新闻简报 | 2026-05-17 | 不构成投资建议<br>
   网页版: https://tinaliliee.github.io/daily-news/
 </div>
 
@@ -503,14 +551,14 @@
 var c1=echarts.init(document.getElementById('chartOil'));
 c1.setOption({tooltip:{trigger:'axis'},legend:{data:['WTI','布伦特'],top:0},grid:{top:40,left:50,right:20,bottom:30},xAxis:{type:'category',data:['5/5','5/7','5/9','5/11','5/13','5/15']},yAxis:{type:'value',name:'美元/桶',min:88},series:[{name:'WTI',type:'line',data:[95,93,95.5,98.07,101.2,105.42],smooth:true,lineStyle:{color:'#E74C3C',width:3},areaStyle:{color:{type:'linear',x:0,y:0,x2:0,y2:1,colorStops:[{offset:0,color:'rgba(231,76,60,0.3)'},{offset:1,color:'rgba(231,76,60,0.05)'}]}},symbol:'circle',symbolSize:8,markPoint:{data:[{coord:['5/15',105.42],symbol:'pin',symbolSize:50,label:{formatter:'$105.42\n周+10%',fontSize:9}}]}},{name:'布伦特',type:'line',data:[100,98,101,104.21,105.8,109.26],smooth:true,lineStyle:{color:'#8E44AD',width:3},symbol:'diamond',symbolSize:8}]});
 
-var c2=echarts.init(document.getElementById('chartMetals'));
-c2.setOption({tooltip:{trigger:'axis'},grid:{top:10,left:50,right:20,bottom:30},xAxis:{type:'category',data:['铜Cu','铝Al','锌Zn','镍Ni','锡Sn']},yAxis:{type:'value',name:'涨跌幅%',min:-5,max:0},series:[{type:'bar',data:[{value:-2.8,itemStyle:{color:'#E74C3C'}},{value:-2.6,itemStyle:{color:'#E67E22'}},{value:-1.4,itemStyle:{color:'#F39C12'}},{value:-2.1,itemStyle:{color:'#E74C3C'}},{value:-4.2,itemStyle:{color:'#C0392B'}}],barWidth:40,label:{show:true,position:'inside',formatter:function(p){return p.value+'%'},fontSize:11,fontWeight:'bold',color:'#fff'}}]});
+var c2=echarts.init(document.getElementById('chartBDI'));
+c2.setOption({tooltip:{trigger:'axis'},grid:{top:20,left:50,right:20,bottom:30},xAxis:{type:'category',data:['5/5','5/7','5/9','5/11','5/13','5/15']},yAxis:{type:'value',name:'BDI指数',min:2000},series:[{name:'BDI',type:'line',data:[2230,2340,2560,3001,3189,3151],smooth:true,lineStyle:{color:'#8B4513',width:3},areaStyle:{color:{type:'linear',x:0,y:0,x2:0,y2:1,colorStops:[{offset:0,color:'rgba(139,69,19,0.3)'},{offset:1,color:'rgba(139,69,19,0.05)'}]}},symbol:'diamond',symbolSize:8,markPoint:{data:[{coord:['5/13',3189],symbol:'pin',symbolSize:50,label:{formatter:'3189\n月+35%',fontSize:9}}]}},{name:'BCI(海岬型)',type:'line',data:[3860,4100,4450,4976,5340,5173],smooth:true,lineStyle:{color:'#E74C3C',width:2},symbol:'circle',symbolSize:6}]});
 
 var c3=echarts.init(document.getElementById('chartRMB'));
 c3.setOption({tooltip:{trigger:'axis',formatter:function(p){return 'USD/CNY: <b>'+p[0].value+'</b>'}},grid:{top:20,left:50,right:20,bottom:30},xAxis:{type:'category',data:['1月','2月','3月','4月','5月']},yAxis:{type:'value',min:6.70,max:7.40,name:'USD/CNY'},series:[{type:'line',data:[7.32,7.25,7.18,6.89,6.80],smooth:true,lineStyle:{color:'#2ECC71',width:3},symbol:'pin',symbolSize:10,areaStyle:{color:{type:'linear',x:0,y:0,x2:0,y2:1,colorStops:[{offset:0,color:'rgba(46,204,113,0.5)'},{offset:1,color:'rgba(46,204,113,0.02)'}]}},markLine:{data:[{yAxis:7.32,label:{formatter:'年初7.32'},lineStyle:{color:'#718096',type:'dashed'}},{yAxis:6.80,label:{formatter:'当前6.80'},lineStyle:{color:'#38a169',type:'dashed'}}]}}]});
 
-var c4=echarts.init(document.getElementById('chartAStock'));
-c4.setOption({tooltip:{trigger:'axis'},grid:{top:10,left:50,right:20,bottom:30},xAxis:{type:'category',data:['沪指','深成指','创业板','成交(万亿)']},yAxis:{type:'value',name:'跌幅%'},series:[{type:'bar',data:[{value:1.02,itemStyle:{color:'#3498DB'}},{value:1.17,itemStyle:{color:'#3498DB'}},{value:0.56,itemStyle:{color:'#3498DB'}},{value:3.2,itemStyle:{color:'#E74C3C'}}],barWidth:40,label:{show:true,position:'top',formatter:function(p){return '-'+p.value+(p.dataIndex===3?'万亿':'%')},fontSize:11,fontWeight:'bold'}}]});
+var c4=echarts.init(document.getElementById('chartCapex'));
+c4.setOption({tooltip:{trigger:'axis'},grid:{top:20,left:50,right:20,bottom:30},xAxis:{type:'category',data:['腾讯Q1\n(亿元)','阿里计划\n(亿元)','全球九大云\n(十亿美元)']},yAxis:{type:'value',name:'金额'},series:[{type:'bar',data:[{value:370,itemStyle:{color:'#3498DB'}},{value:3800,itemStyle:{color:'#E74C3C'}},{value:8300,itemStyle:{color:'#9B59B6'}}],barWidth:50,label:{show:true,position:'top',formatter:function(p){var v=p.value;if(p.dataIndex===2)return'$'+v+'亿';return v+'亿'},fontSize:11,fontWeight:'bold'}}]});
 
 document.querySelectorAll('.tab-btn').forEach(function(b){b.addEventListener('click',function(){document.querySelectorAll('.tab-btn').forEach(function(x){x.classList.remove('active')});document.querySelectorAll('.tab-content').forEach(function(x){x.classList.remove('active')});this.classList.add('active');document.getElementById(this.dataset.tab).classList.add('active')})});
 window.addEventListener('resize',function(){c1.resize();c2.resize();c3.resize();c4.resize()});
